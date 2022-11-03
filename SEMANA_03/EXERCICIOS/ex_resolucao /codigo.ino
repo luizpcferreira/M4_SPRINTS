@@ -13,8 +13,8 @@
 #define buzzer 13
 
 // listas para salvar o historico 
-int lista [10][4] = {};
-int lista_sons [10] = {};
+int lista [100][4] = {};
+int lista_sons [100] = {};
 
 //para seguir um index
 int x = -1;
@@ -63,7 +63,7 @@ void mostrar(){
 
 //limpar o array apos ser mostrado
 void limpar(){
-  for (int i = 0; i < 15; i++) {
+  for (int i = 0; i < 100; i++) {
     for (int j = 0; j < 4; j++) {
       lista[i][j] = 0;
     }
